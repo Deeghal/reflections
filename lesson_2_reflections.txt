@@ -7,3 +7,12 @@ How can you use the staging area to make sure you have one commit per logical ch
 	By git diff. It will show the change I made. If its one logical change, I add it to the staging area and then commit. Alternatively, I can also add the changes to the staging area and then type git diff --staged to see if my staging area has only one logical change difference from my previously committed files and then commit it.
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 	Branches would let me organise my code if I want to test a new functionality on top of my existing code.
+
+How do the diagrams help you visualize the branch structure?
+	Helps in getting the graph to know which commits can be reached from the current commit.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	We get a combined file with functionalities from both branches. So that we know which commits get merged and how to reach each previous commit.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Automatic merging checks for the entire history to decide which commits can be merged. It saves a lot of time. On the other hand it can be disastrous if the logic is not understood by this algorithm doing the merge. Manual merging will save these disasters but will increase the effort and time required considerably.
